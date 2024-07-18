@@ -1,0 +1,238 @@
+*{
+    ont-family: "Oswald", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;/* vh means screen nu size aayitt thanne content varaan */
+    position: relative; /* place in it normal position /    / ----------------------------- */
+}
+
+#navbar{width: 85%;
+margin-left: 100px;
+display: flex; /* to make child element inline / / (nav nte child aanu ul um img um ) */
+justify-content: space-between; /* place content horizondally / akalam palikkan*/
+align-items: center;}/* place child content content vertically */
+
+
+#logo{width: 130px;}
+
+.listitem{
+    list-style: none; /* to remove list style */
+    display: inline; /* list kal inline avan vendi*/
+    margin: 20px 10px;
+    font-weight: 700;/* katti koottan */
+}
+
+#listitem:hover{color: orangered;} /* --------------------------------------------------- */
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+#title{
+    margin-top: 11%;
+    margin-left: 8%;
+}
+
+#title h1{font-size: 50px;
+margin-bottom: 20px;}
+
+#title a{
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;  
+    right: 0px;   /* ithukond aanu ee "div" inline ayitt varan */
+}
+
+.photo1{position: absolute;
+height: 100%;
+bottom: 0px;
+left: 50%;
+transform: translate(-50%);
+transition: bottom 1s, left 2s;}
+
+#images:hover #shape{
+    bottom: 70px;
+}
+
+#images:hover #girl{
+    left: 40%;
+}
+#about{
+
+    margin: 24% 6% 0 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-size: 30px;
+}
+
+.heading p{
+    font-size: 20px;
+    color: green; 
+
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+}
+#content_image image{
+width: 80%;
+
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500px;
+    }
+    #information{
+        margin-top: 2rem;
+    }
+    .info{
+        margin-top: 1rem;
+    }
+    .info span{
+            margin-left: 1rem;
+    }  
+    #skill{
+        margin: 8% 8% 0 8%;
+    } 
+    #skill_conatiner{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      
+
+    }
+    #skill_image img{
+        width: 90%;
+    }
+    .bar_comtainer{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .bar_comtainer span{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .bar{
+        width:100% ;
+        height:0.5rem ;
+        background-color: black ;
+        border-radius:10px ;
+        position: absolute;
+        bottom: 0px;
+        
+
+    }
+    #html_bar{
+        width: 85%;
+        background-color: orangered;
+    }
+#css_bar{
+    width:75%;
+    background-color: orangered;
+}
+    #js_bar
+    {
+        width: 69%;
+        background-color: orangered;
+    }
+    #react_bar{
+        width: 55%;
+        background-color: orangered;
+    }
+
+.icon_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    
+   
+}
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+.icon i{
+    color: black;
+    
+    
+    
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,orange);
+    animation: pp .5s;
+
+}
+
+
+    
+    @keyframes pp
+    {0% { transform:rotate(15deg); }
+    10% {  transform:rotate(-15deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(15deg); }
+    40% { transform:  rotate(-15deg); }
+    
+    }
+
+
+.icon:hover i{
+    color:white;
+}
+
+footer{
+    padding: 3rem 0px;
+}
+footer p{
+    font-size:17px ;
+    font-weight: 600;
+    text-align: center;
+}
+.up-arrow{
+    background-image: linear-gradient(to bottom right,yellow,orange);
+    animation: pp .5s;
+  float: right;
+  margin: 13px 50px 50px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
